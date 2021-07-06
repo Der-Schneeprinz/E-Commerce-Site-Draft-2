@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap");
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fffafb;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8c9189;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fffafb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.navbar-brand {
+  font-family: "DM Serif Display", Serif;
+  font-size: 30px;
+}
+
+.nav-custom {
+  top: 4.5em;
+}
+
+.bg-custom {
+  background-color: #eb791c;
+}
+
+.bg-custom2 {
+  background-color: #1b754b;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-indent: 0;
+  color: #8c9189;
+}
+
+.card {
+  margin: 5em auto;
+  padding: 6rem;
+}
+
+.masthead-title {
+  font-family: "Big Shoulders Stencil Display", Bold;
+  font-size: 100px;
+  color: #eb791c;
+  mix-blend-mode: screen;
+}
+
+.masthead {
+  background-image: url("../res/bg-masthead.png");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.masthead-description {
+  font-size: 30px;
+  text-indent: 0;
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.foot {
+  background-color: #8c9189;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.foot .footer-special {
+  font-family: "DM Serif Display", Serif;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+  margin: 2em;
+}
+
+#Beer {
+  background-image: url("../res/index-card-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+body {
+  background-color: #fffafb;
+}
+
+header > *, header, h1, h6, article {
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  header > *, header, h1, h6, article {
+    padding: 0;
+  }
+}
+
+nav a:hover {
+  -webkit-text-decoration: underline #eb791c 5px !important;
+          text-decoration: underline #eb791c 5px !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "DM Serif Display", Serif;
+  font-weight: 600;
+}
+
+article {
+  color: #160408;
+}
+
+article p {
+  text-indent: .5in;
+}
+
+nav a {
+  color: #462525;
+}
+
+nav a:hover {
+  color: #160408;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+input {
+  display: block;
+  margin: 6px;
+}
+
+ul {
+  list-style-type: '✓ ';
+}
+
+dd {
+  text-indent: 2rem;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+//Resets go here
+@import './var';
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $bgc;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $foot;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $bgc;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $scrollbar-color;
+}

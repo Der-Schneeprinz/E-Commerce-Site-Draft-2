@@ -1,0 +1,91 @@
+//Divs go here
+@import './var';
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-brand {
+    font-family: $text-font-head;
+    font-size: 30px;
+}
+
+.nav-custom {
+    top: 4.5em;
+}
+
+.bg-custom {
+    background-color: $primary-color;
+}
+
+.bg-custom2 {
+    background-color: $secondary-color;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 0;
+    color: $foot;
+}
+
+.card {
+    margin: 5em auto;
+    padding: 6rem;
+}
+
+.masthead-title {
+    font-family: $text-font-mast;
+    font-size: 100px;
+    color: $primary-color;
+    mix-blend-mode:screen;
+}
+
+.masthead {
+    background-image: url('../res/bg-masthead.png');
+    background-repeat:no-repeat;
+    height: 100%;
+}
+
+.masthead-description {
+    font-size: 30px;
+    text-indent: 0;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.foot {
+    background-color: $foot;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+    .footer-special {
+        font-family: $text-font-head;
+    }
+}
+
+
+.copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map-container {
+    margin: 2em;
+}

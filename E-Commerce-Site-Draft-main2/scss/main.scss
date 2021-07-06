@@ -1,0 +1,64 @@
+@import './res', './var', './div', "./ids";
+
+body {
+    background-color: $bgc;
+}
+
+header > *, header, h1, h6, article {
+    padding: 1rem 2rem;
+    @media screen and (max-width: 576px) {
+        padding: 0;
+    }
+}
+
+nav {
+    & a:hover {
+        text-decoration: underline $primary-color 5px !important;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: $text-font-head;
+    font-weight: 600;
+}
+
+article {
+    color: $text-colour;
+    & p {
+        text-indent: .5in;
+    }
+}
+
+nav {
+    & a {
+        color: $a-colour;
+        &:hover {
+            color: $text-colour;
+            text-decoration: wavy;
+        }
+    }
+}
+
+input {
+    display: block;
+    margin: 6px;
+}
+
+ul {
+    list-style-type: '✓ ';
+}
+
+dd {
+    text-indent: 2rem;
+}
+
+footer {
+    a:hover {
+        text-decoration: none;
+    }
+}
