@@ -19,18 +19,19 @@
     <div class="masthead">
         <div class="container">
             <div class="row img-hide">
-                <div class="col-lg-4 py-5 .d-none .d-md-block .d-lg-none">
+                <div class="col-lg-4 py-5 d-none d-md-none d-lg-block">
                     <img src="./res/beer_2.png" alt="">
                 </div>
                 <div class="col-lg-8">
                     <h1 class="masthead-title">Dionysian Brews</h1>
                     <article class="text-white">
-                        <aside class="subtitle">
+                        <aside class="subtitle bg-white">
                             Original IPA
                         </aside>
-                        <p class="masthead-description">
+                        <p class="masthead-description bg-custom">
                             A sensation so tangy, so intoxicating, so <b>good!</b>
                         </p>
+                        <button class="btn btn-outline-warning font-weight-bold shadow"> Buy Some Beer Now!</button>
                     </article>
                 </div>
             </div>
@@ -53,22 +54,76 @@
 
     <!-- Main -->
     <main>
-        <section class="row">
+
+        <!-- Welcome -->
+        <section>
             <?php
                 if(isset($_SESSION["username"]))
                     echo "<p>Hello". $_SESSION["username"] . "!</p>";
             ?>
-            <div class="col-md-6">
-                <div id="Beer" class="card">
+            <div class="col-md-8 my-3">
+                <div id="Beer" class="card my-5 p-6">
                     <h1 class="card-title text-white">S'up?</h1>
                     <p class="card-text text-dark bg-white">Cracking a cold one with the boys has never felt so god-like.</p>
                 </div>
             </div>
         </section>
-        <section class="row">
+
+        <!-- Shop -->
+        <section>
             <div class="col-md-8">
-                <h1 id="Locations">Get Some Beer!</h1>
-                <p class="subtitle" style="padding: 0 2rem;">
+                <h1>Shop Online!</h1>
+                <p class="subtitle">
+                    Try out our some of our original IPA!
+                </p>
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <a href="./shop.php">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./res/Dion-Beer-Ori.png" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Original</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./res/Dion-Beer-Spicy.png" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Spicy</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./res/Dion-Beer-Light.png" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Light</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <?php
+
+                ?>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section>
+            <div class="col-md-8">
+                <h1 id="Locations" class="mx-1">Get Some Beer!</h1>
+                <p class="subtitle">
                     From Convenience Stores Near You!
                 </p>
                 <div id="map-container-google-1" class="z-depth-1-half map-container">

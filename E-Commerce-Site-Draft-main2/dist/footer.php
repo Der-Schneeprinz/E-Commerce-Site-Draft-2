@@ -2,7 +2,7 @@
 <footer class="bg-dark text-center text-lg-start text-light foot center">
         <div class="container p-4">
             <div class="row">
-                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <div class="col-lg-3 col-md-12">
                     <h3 class="footer-special">Dionysian Brews</h3>
                     <p>
                     Cracking a cold one with the boys has never felt so god-like.
@@ -20,7 +20,7 @@
                     </svg>
                 </div>
 
-                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <div class="col-lg-3 col-md-4">
                     <h5 id="contacts" class="text-uppercase">Locations</h5>
                     <div class="text-left">
                         <dt class="text-light">Quezon City</dt>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <div class="col-lg-3 col-md-4">
                     <h5 class="text-uppercase">Other Sites</h5>
                     <ul class="list-unstyled mb-0">
                         <li>
@@ -42,7 +42,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <div class="col-lg-3 col-md-4">
                     <h5 id="contacts" class="text-uppercase">Contacts</h5>
                     <ul class="list-unstyled mb-0 text-left">
                         <li>
@@ -54,8 +54,8 @@
                         <li>
                             <a href="mailto:mcolaguer@iskolarngbayan.pup.edu.ph" class="text-light"><b>Email:</b> mcolaguer<wbr>@iskolarngbayan.pup.edu.ph</a>
                         </li>
-                        <li>
-                            <b>Socials:</b><br>
+                        <li class="d-flex">
+                            <b>Socials:</b>
                             <a href="https://www.facebook.com/Flint.Oldfield/" class="text-light"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>&nbsp;
                             <a href="https://twitter.com" class="text-light"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>&nbsp;
                             <a href="https://www.instagram.com/duke_jijii/" class="text-light"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>&nbsp;

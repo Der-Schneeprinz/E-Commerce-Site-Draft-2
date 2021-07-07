@@ -24,9 +24,14 @@
                             <form action="./inc/login.inc.php" method="post">
                                 <input type="text" name="username" placeholder="Username/Email">
                                 <input type="password" name="password1" placeholder="Password">
-                                <button type="submit" name="submit">Confirm</button>
+                                <button type="submit" name="submit" class="btn btn-outline-warning">Confirm</button>
                             </form>
                         </div>
+
+                        <aside class="col-md-2">
+                            <p>Sign in to your account</p>
+                            <img src="" alt="">
+                        </aside>
 
                         <?php
                             if(isset($_GET["error"])) {
@@ -38,10 +43,6 @@
                             }
                         ?>
 
-                        <aside class="col-md-2">
-                            <p>Sign in to your account</p>
-                            <img src="" alt="">
-                        </aside>
                     </div>
             </section>
         </div>

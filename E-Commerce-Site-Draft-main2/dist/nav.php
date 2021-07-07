@@ -41,19 +41,19 @@
     <ul class="nav navbar-nav ml-auto">
         <?php
             if(isset($_SESSION["username"])) {
-                echo "<li class=\"nav-item\">
-                        <a href=\"./profile.php\" class=\"nav-link\"><i class=\"fa fa-lg fa-user\" aria-hidden=\"true\"></i></a>
-                    </li>";
-                echo "<li class=\"nav-item\">
-                        <a href=\"./inc/logout.inc.php\" class=\"nav-link\"><i class=\"fa fa-lg fa-sign-out\" aria-hidden=\"true\"></i></a>
-                    </li>";
+                echo '<li class= "nav-item ">
+                        <a href= "./profile.php " class= "nav-link "><i class= "fa fa-lg fa-user " aria-hidden= "true "></i></a>
+                    </li>';
+                echo '<li class= "nav-item ">
+                        <a href= "./inc/logout.inc.php " class= "nav-link "><i class= "fa fa-lg fa-sign-out " aria-hidden= "true "></i></a>
+                    </li>';
             } else {
-                echo "<li class=\"nav-item\">
-                        <a href=\"./signup.php\" class=\"nav-link\"><i class=\"fa fa-lg fa-user-plus\" aria-hidden=\"true\"></i></a>
-                    </li>";
-                echo "<li class=\"nav-item\">
-                        <a href=\"./login.php\" class=\"nav-link\"><i class=\"fa fa-lg fa-sign-in\" aria-hidden=\"true\"></i></a>
-                    </li>";
+                echo '<li class= "nav-item ">
+                        <a href= "./signup.php " class= "nav-link "><i class= "fa fa-lg fa-user-plus " aria-hidden= "true "></i></a>
+                    </li>';
+                echo '<li class= "nav-item ">
+                        <a href= "./login.php " class= "nav-link "><i class= "fa fa-lg fa-sign-in " aria-hidden= "true "></i></a>
+                    </li>';
             }
         ?>
         <!--<li class="nav-item">

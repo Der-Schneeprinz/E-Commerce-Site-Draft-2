@@ -31,5 +31,5 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: $scrollbar-color;
+    background: invert($color: $foot);
 }

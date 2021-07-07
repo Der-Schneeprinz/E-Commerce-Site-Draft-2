@@ -28,7 +28,7 @@
                             <input type="text" name="username" placeholder="Username">
                             <input type="password" name="password1" placeholder="Password">
                             <input type="password" name="password2" placeholder="Confirm Password">
-                            <button type="submit" name="submit">Confirm</button>
+                            <button type="submit" name="submit" class="btn btn-outline-warning">Confirm</button>
                         </form>
                     </div>
 

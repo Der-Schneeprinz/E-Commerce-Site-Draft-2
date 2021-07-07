@@ -4,11 +4,8 @@ body {
     background-color: $bgc;
 }
 
-header > *, header, h1, h6, article {
-    padding: 1rem 2rem;
-    @media screen and (max-width: 576px) {
-        padding: 0;
-    }
+section {
+    margin: 3em 0;
 }
 
 nav {
@@ -57,7 +54,14 @@ dd {
     text-indent: 2rem;
 }
 
+button {
+    margin: 6px;
+}
+
 footer {
+    & > div > div > div {
+        margin: 0 !important;
+    }
     a:hover {
         text-decoration: none;
     }
