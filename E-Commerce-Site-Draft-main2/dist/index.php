@@ -56,15 +56,15 @@
     <main>
 
         <!-- Welcome -->
-        <section>
+        <section class="bg-special h-100">
             <?php
                 if(isset($_SESSION["username"]))
                     echo "<p>Hello". $_SESSION["username"] . "!</p>";
             ?>
-            <div class="col-md-8 my-3">
-                <div id="Beer" class="card my-5 p-6">
-                    <h1 class="card-title text-white">S'up?</h1>
-                    <p class="card-text text-dark bg-white">Cracking a cold one with the boys has never felt so god-like.</p>
+            <div class="col-md-8 my-3 h-100">
+                <div id="Beer" class="card my-5 p-5 d-flex align-items-center text-center shadow rounded">
+                    <h1 class="card-title text-white">Dionysian Brews</h1>
+                    <p class="card-text text-dark bg-white m-5 bg-logo">Brewed with the finest malt and served with a side of chaos... Dionysus isn't the most law-aligned of the greek pantheon, and you can be wild too with Dionysian Beer. If you're searching for a new class of IPAs Dionysian Brews has got your back. Just know that if you wanna feel god-like, you gotta crack a cold one with the boys.</p>
                 </div>
             </div>
         </section>

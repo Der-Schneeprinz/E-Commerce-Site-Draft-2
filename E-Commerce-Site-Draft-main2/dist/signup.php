@@ -17,20 +17,23 @@
 
     <main>
         <div class="row">
-            <section class="card col-lg-6">
+
+            <div class="col-md-8">
+                <h1>Sign Up</h1>
+                <form action="./inc/signup.inc.php" method="post" class="">
+                    <input type="text" name="given_name" placeholder="Given Name">
+                    <input type="text" name="sirname" placeholder="Sirname">
+                    <input type="text" name="email" placeholder="Email Address">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password1" placeholder="Password">
+                    <input type="password" name="password2" placeholder="Confirm Password">
+                    <button type="submit" name="submit" class="btn btn-outline-warning">Confirm</button>
+                </form>
+            </div>
+
+            <section class="card col-lg-6 m-5">
                 <div class="row">
-                    <div class="col-md-8 center">
-                        <h1>Sign Up</h1>
-                        <form action="./inc/signup.inc.php" method="post">
-                            <input type="text" name="given_name" placeholder="Given Name">
-                            <input type="text" name="sirname" placeholder="Sirname">
-                            <input type="text" name="email" placeholder="Email Address">
-                            <input type="text" name="username" placeholder="Username">
-                            <input type="password" name="password1" placeholder="Password">
-                            <input type="password" name="password2" placeholder="Confirm Password">
-                            <button type="submit" name="submit" class="btn btn-outline-warning">Confirm</button>
-                        </form>
-                    </div>
+                    
 
                     <aside class="col-md-2">
                         <p>Register for new account</p>

@@ -2,7 +2,7 @@
     include_once "head-meta.php";
 ?>
 
-    <title>Dionysian Brews</title>
+    <title>Dionysian Brews | Shopping</title>
 
     <?php
         include_once "link-res.php";

@@ -166,6 +166,13 @@ nav a:hover {
           text-decoration: underline #eb791c 5px !important;
 }
 
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
 img {
   width: 100%;
   height: auto;

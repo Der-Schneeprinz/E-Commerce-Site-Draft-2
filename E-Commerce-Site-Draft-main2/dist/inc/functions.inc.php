@@ -63,7 +63,7 @@ function passwordMatchError($password1, $password2) {
 function usernameTaken($conn, $username, $email) {
 
     //prepares sql command
-    $sql = "SELECT * FROM users WHERE username = ? OR uEmail = ?;";
+    $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
 
     //initializes prepared statment
     $stmt = mysqli_stmt_init($conn);
@@ -100,7 +100,7 @@ function usernameTaken($conn, $username, $email) {
 function createUser($conn, $given_name, $sirname, $email, $username, $password1) {
     
     //prepares sql command
-    $sql = "INSERT INTO users (uGiven, uSir, uEmail, username, uPass) VALUES (?, ?, ?, ?, ?);";
+    $sql = "INSERT INTO users (usersFirst, usersLast, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?, ?);";
 
     //initializes prepared statment
     $stmt = mysqli_stmt_init($conn);
@@ -145,15 +145,19 @@ function emptyInputLogin($username, $password1) {
 function loginUser($conn, $username, $password1) {
 
     $username_taken = usernameTaken($conn, $username, $username);
+    
 
-    if($username_taken !== false) {
+    //If the username does not exist, go back
+    if($username_taken === false) {
         header("location: ../login.php?error=wronglogin");
         exit();
     }
 
-    $pass_hashed = $username_taken["uPass"];
+    //hashed password
+    $pass_hashed = $username_taken["usersPwd"];
     $check_pass = password_verify($password1, $pass_hashed);
 
+    //If password is wrong, go back
     if($check_pass === false) {
         header("location: ../login.php?error=wronglogin");
         exit();
